@@ -1,1 +1,62 @@
-mobile/app.json
+{
+  "expo": {
+    "name": "BlastMyCV",
+    "slug": "blastmycv",
+    "version": "1.0.0",
+    "runtimeVersion": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "blastmycv",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1A56DB"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.blastmycv.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Allow BlastMyCV to access your photos to upload your CV.",
+        "NSCameraUsageDescription": "Allow BlastMyCV to use your camera."
+      }
+    },
+    "android": {
+      "package": "com.blastmycv.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#1A56DB"
+      },
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://blastmycv.com"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      "expo-document-picker"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "aaf1a3b5-3f9b-4bda-a622-19c2f38c813f"
+      }
+    }
+  }
+}
