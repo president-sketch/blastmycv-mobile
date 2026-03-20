@@ -4,11 +4,11 @@
     "slug": "blastmycv",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/icon.jpg",
     "scheme": "blastmycv",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/images/splash-icon.png",
+      "image": "./assets/images/splash-icon.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#1A56DB"
     },
@@ -28,13 +28,13 @@
       "package": "com.blastmycv.app",
       "versionCode": 2,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/adaptive-icon.jpg",
         "backgroundColor": "#1A56DB"
       },
       "permissions": []
     },
     "web": {
-      "favicon": "./assets/images/icon.png"
+      "favicon": "./assets/images/icon.jpg"
     },
     "plugins": [
       [
