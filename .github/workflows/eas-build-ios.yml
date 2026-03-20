@@ -16,8 +16,10 @@ jobs:
 
       - run: npm install || true
 
-      - run: npx expo --version
+      - run: npm install -g eas-cli
 
-      - run: npx eas build --platform ios --non-interactive
+      - run: expo --version
+
+      - run: eas build --platform ios --non-interactive
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
