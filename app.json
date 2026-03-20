@@ -3,16 +3,17 @@
     "name": "BlastMyCV",
     "slug": "blastmycv",
     "version": "1.0.0",
-    "runtimeVersion": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "blastmycv",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
       "image": "./assets/images/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#1A56DB"
+    },
+    "updates": {
+      "enabled": false
     },
     "ios": {
       "supportsTablet": false,
@@ -25,15 +26,12 @@
     },
     "android": {
       "package": "com.blastmycv.app",
-      "versionCode": 1,
+      "versionCode": 2,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#1A56DB"
       },
-      "permissions": [
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE"
-      ]
+      "permissions": []
     },
     "web": {
       "favicon": "./assets/images/icon.png"
@@ -50,8 +48,7 @@
       "expo-document-picker"
     ],
     "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
+      "typedRoutes": true
     },
     "extra": {
       "eas": {
