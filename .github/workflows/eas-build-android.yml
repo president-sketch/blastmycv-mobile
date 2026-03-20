@@ -27,7 +27,7 @@ jobs:
         with:
           version: 9
 
-      - run: pnpm install --frozen-lockfile
+      - run: run: pnpm install --no-frozen-lockfile
 
       - uses: expo/expo-github-action@v8
         with:
